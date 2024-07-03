@@ -1,0 +1,89 @@
+*, :after, :before, html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px;
+    background-color: #000084;
+    color: #bbb;
+    font-family: 'more_perfect_dos_vgaregular', 'Courier New', monospace;
+    font-size: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: dos;
+    src: url(Font/dos.ttf);
+}
+  
+div, button {
+    font-family: dos;
+    display: flex;
+    flex-direction: column;
+}
+
+.fatal-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.center-404 {
+    background-color: #bbb;
+    padding: 10px;
+    box-shadow: 20px 10px 10px #000;
+
+}
+
+.center-404 p {
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 5rem;
+    color: #d13939;
+    text-indent: 70px;
+}
+
+.text-after-404 p {
+    font-size: 25px;
+    margin-top: 3rem;
+}
+
+.go-home {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px 10px 10px #000;
+}
+
+.go-home button {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #bbb;
+    
+}
+
+.go-home button:hover {
+    background-color: #39d14d;
+    color: #fff;
+}
+
+.blink {
+    animation: blinkingText .8s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        opacity: 0;
+    }
+    
+    49% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+}
